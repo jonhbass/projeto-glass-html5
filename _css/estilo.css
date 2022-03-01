@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@font-face {
+    font-family:'fonteLogo';
+    src: url("../_fonts/Game\ Of\ Squids.ttf");
+}
+/*formatacao dos paragrafos*/
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+/*cor de fundo do corpo*/
+body {
+    background-color: rgb(255, 240, 30);
+    font-family: sans-serif;
+    
+}
+/*formatacao dos links*/
+a {
+    color: rgb(56, 56, 56);
+    text-decoration:none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+/*sombra do google glass atravez de umc id class*/
+.glass{
+    text-shadow: 2px 2px 2px rgb(23, 5, 104);
+}
+/*formatacao imagem homem e mulher*/
+figure.foto_legenda{
+    width: 85%;
+    position: relative;
+    border: 6px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px black;
+}
+/*propriedades da imagem*/
+figure.foto_legenda img {
+    height: 100%;
+    width: 100%;
+}
+/*figcaption efeito de fundo escuro na foto junto ao texto*/
+figure.foto_legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: blanchedalmond;
+    height: 100%;
+    width: 100%;
+    padding: 50px; /*cria uma distancia no texto*/
+    box-sizing: border-box; /*a caixa preenche toda figura*/
+    transition: opacity 1s; /*isso cria o efeito de transicao*/
+}
+/*efeito de transicao do fundo ao passar o mouse*/
+figure.foto_legenda:hover figcaption{
+    opacity: 1;
+}
+/*formatação completa do menu*/
+nav#menu h1{
+    display: none;
+}
+nav#menu {
+    display: block;
+}
+nav#menu ol {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: rgb(189, 189, 189);
+    padding: 10px; /*faz um preenchimento atraz do texto*/
+    margin: 2px; /*estipula uma margem invisivel*/
+    transition: background-color 1s; /*faz o efeito de transicao no menu*/
+}
+/*o hover faz efeito de transicao quando passa o mouse*/
+nav#menu li:hover {
+    background-color: #646464; /*coloca uma transiçao de cor quando passar o mouse*/
+    
+}
+/*o (a) sao as marcacoes de links*/
+nav#menu a{
+    color: black;
+    text-decoration-line: none;
+}
+nav#menu a:hover{
+    color: rgb(243, 238, 231);
+    text-decoration-line: underline;
+}
+/*Uma CAIXA e  TUDO o que esta dentro da div*/
+div#interface {
+    width: 1200px;
+    background-color: rgb(221, 220, 219);
+    margin: 20px/*margem cima*/ auto /*direita*/ 10px /*baixo*/auto; /*esquerda*/
+    box-shadow: 0px 0px 10px black ;/*cria uma sombra em volta do objeto*/
+    padding: 30px; /*limita a distancia do conteudo para as bordas*/
+}
+/*configuraçoes do oculos*/
+figure#oculos {
+    position: absolute;
+    left: 1080px;
+    top: 50px;
+}
+/*fazer as linhas ou bordas do cabeçalho*/
+header#cabecalho {
+    border-bottom: 1px gray solid;
+    height: 150px;
+    background-image: url("../_imagens/glass-logo-peq.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 90px;
+}
+/*para titulos h1 no cabecalho*/
+header#cabecalho h1 {
+    font-family: fonteLogo, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(97, 97, 97);
+    text-shadow: 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+/*para titulos h2 no cabecalho*/
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    color: rgb(97, 97, 97);
+    padding: 0px;
+    margin-top: 0px;
+}
+/*divide os textos no corpo da pagina*/
+section#corpo {
+    border-right: 1px solid rgb(97, 97, 97);
+    display: block;
+    width: 650px;
+    float: left;
+    padding-right: 25px;
+}
+/**/
+article#main_news h2{
+    font-size: 12px;
+    color: rgb(70, 70, 70);
+    background-color: rgb(187, 187, 187);
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+/*cabeçalho do artigo*/
+header#cabecalho_artigo h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    margin-bottom: 0px;
+    
+}
+header#cabecalho_artigo h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    
+}
+header#cabecalho_artigo h4{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+}
+/*tabela inserida na pagina*/
+table#tabela caption{
+    color: rgb(114, 114, 114);
+    font-size: 15px;
+    font-weight: bold;
+}
+table#tabela caption span{
+    display: block;
+    float: right;
+    color: rgb(5, 5, 5);
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+table#tabela {
+    border: 1px solid rgb(80, 80, 80);
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabela td{
+    border: 1px solid rgb(80, 80, 80);
+    padding: 10px; /*tamanho do espaço interno da tabela*/
+    text-align: center;
+}
+/*formatar o lado esquerdo da tabela*/
+table#tabela td.esquerda{
+    color: white;
+    background-color: rgb(80, 80, 80);
+    vertical-align: top;
+    font-weight: bold;
+}
+/*formatar o lado direito da tabela*/
+table#tabela td.direita{
+    color: rgb(0, 0, 0);
+    background-color: rgb(165, 163, 163);
+    font-weight: bold;
+}
+/*lado da direita da pagina*/
+aside#lateral {
+    display: block;
+    width: 500px;
+    float: right;
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+aside#lateral h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    color:rgb(75, 74, 74);
+    margin-top: -5px;
+}
+aside#lateral h2{
+    background-color: gray;
+    color: whitesmoke;
+    padding: 5px;
+}
+/*parte de baixo da pagina ou rodapé*/
+footer#rodape {
+    clear: both;
+    border-top: 1px solid rgb(87, 87, 87);
+}
+footer#rodape p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
